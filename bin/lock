@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+sleep 0.2
+
+TEMPDIR=/tmp
+
+sh $HOME/bin/individual_scrot
+convert $TEMPDIR/head_1.png -scale 10% -scale 1000% $TEMPDIR/head_1.png
+[[ -f $HOME/pictures/misc/lock-image.png ]] && convert $TEMPDIR/head_1.png $HOME/user.png -gravity center -composite -matte $TEMPDIR/head_1.png
+
+convert $TEMPDIR/head_0.png -scale 10% -scale 1000% $TEMPDIR/head_0.png
+[[ -f $HOME/pictures/misc/lock-image.png ]] && convert $TEMPDIR/head_0.png $HOME/user.png -gravity center -composite -matte $TEMPDIR/head_0.png
+
+convert $TEMPDIR/head_1.png $TEMPDIR/head_0.png +append $TEMPDIR/screen.png
+
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+i3lock -u -i $TEMPDIR/screen.png

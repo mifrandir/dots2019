@@ -1,0 +1,4 @@
+#!/bin/bash
+killall polybar 
+sleep 0.1
+polybar -r $(hostname) &>/dev/null &

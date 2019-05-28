@@ -1,0 +1,5 @@
+Screenshot,$HOME/.scripts/screenshot
+Restart Polybar,$HOME/.scripts/polystart
+Load Background,$HOME/.scripts/load_bg
+Calculator,$HOME/.scripts/calculator
+Make Scripts,$HOME/.scripts/makeexe

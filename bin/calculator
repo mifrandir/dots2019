@@ -1,0 +1,2 @@
+#!/bin/bash
+rofi -show calc -lines 16 -columns 2

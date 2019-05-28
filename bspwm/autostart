@@ -1,0 +1,7 @@
+$HOME/.screenlayout/default.sh
+compton &
+feh --bg-scale $HOME/.background.png
+$HOME/bin/polystart
+megasync &
+mailspring -b &
+$HOME/clear_vim
