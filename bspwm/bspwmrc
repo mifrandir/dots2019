@@ -11,9 +11,9 @@ if [ $HOSTNAME == "desktop" ]; then
     bspc monitor R -d Q W E R
 elif [ $HOSTNAME == "xps" ]; then
 	bspc monitor eDP1 -n P
-	bspc monitor P -d 1 2 3 4 Q W
+	bspc monitor P -d 1 2 3 4 Q W E R
 	bspc monitor HDMI-0 -n S
-	bspc monitor S -d E R
+	bspc monitor S -d 5 6
 fi
 
 
