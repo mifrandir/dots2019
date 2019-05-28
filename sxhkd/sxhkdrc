@@ -79,6 +79,9 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1,2,3,4,q,w,e,r}
 	bspc {desktop -f,node -d} '^{1-8}'
+
+super + {_, shfit +}{5,6}
+	bspc {desktop -f, node -d} '^{9, 10}'
 #
 # move/resize
 #
