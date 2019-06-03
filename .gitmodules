@@ -1,3 +1,36 @@
 [submodule "vim/plug/YouCompleteMe"]
 	path = vim/plug/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/plug/ale"]
+	path = vim/plug/ale
+	url = https://github.com/w0rp/ale
+[submodule "vim/plug/Colorizer"]
+	path = vim/plug/Colorizer
+	url = https://github.com/lilydjwg/colorizer
+[submodule "vim/plug/lightline.vim"]
+	path = vim/plug/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "vim/plug/ultisnips"]
+	path = vim/plug/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "vim/plug/fzf"]
+	path = vim/plug/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "vim/plug/vim-closer"]
+	path = vim/plug/vim-closer
+	url = https://github.com/rstacruz/vim-closer
+[submodule "vim/plug/vim-go"]
+	path = vim/plug/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "vim/plug/vim-markdown"]
+	path = vim/plug/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
+[submodule "vim/plug/vim-snazzy"]
+	path = vim/plug/vim-snazzy
+	url = https://github.com/connorholyday/vim-snazzy
+[submodule "vim/plug/vim-snippets"]
+	path = vim/plug/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "vim/plug/vimtex"]
+	path = vim/plug/vimtex
+	url = https://github.com/lervag/vimtex
