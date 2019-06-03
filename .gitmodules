@@ -1,3 +1,6 @@
 [submodule "vim/plug/YouCompleteMe"]
 	path = vim/plug/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "oh-my-zsh/custom/themes/spaceship-prompt"]
+	path = oh-my-zsh/custom/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt
