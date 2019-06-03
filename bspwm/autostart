@@ -5,3 +5,4 @@ $HOME/bin/polystart
 megasync &
 mailspring -b &
 $HOME/clear_vim
+nm-applet &
