@@ -3,7 +3,7 @@ rofi.m:				     0
 rofi.width:                          30
 rofi.lines:                          8
 rofi.columns:                        1
-rofi.font:                           Input Mono 12
+rofi.font:                           Hack 16
 ! State:                             'bg',     'fg',        'bgalt',  'hlbg',   'hlfg'
 rofi.color-normal:                   #cc01010a, #ffffff,    #cc01010a, #ffffff, #cc01010a
 rofi.color-urgent:                   #ff5c57, #000000,    #ff5c57, #ffffff,  #cc01010a
