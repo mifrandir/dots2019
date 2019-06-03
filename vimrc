@@ -21,13 +21,18 @@ Plug 'plasticboy/vim-markdown'
 Plug 'w0rp/ale'
 Plug 'honza/vim-snippets'
 Plug 'sirver/ultisnips'
+Plug 'Valloric/YouCompleteMe'
+Plug 'rstacruz/vim-closer'
 call plug#end()
 
+let g:ale_completion_delay = 5000
+let g:airline#extesnions#ale#enabled = 1
+
 let g:UltiSnipsSnippetsDir="/home/miltfra/dots/vim/plug/vim-snippets/UltiSnips"
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-let g:UltiSnipsEditSplit = "horizontal"
+"let g:UltiSnipsExpandTrigger = ''
+"let g:UltiSnipsJumpForwardTrigger = '<tab>'
+"let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+"let g:UltiSnipsEditSplit = "horizontal"
 " Configurations:
 colorscheme snazzy
 set laststatus=2
@@ -77,13 +82,6 @@ set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
 
 " Go
 set autowrite
@@ -91,7 +89,8 @@ let g:go_list_type = "quickfix"
 
 " Keybindings:
 let mapleader = ","
-"nmap <Tab> :tabn<CR>
+nmap <Tab> :tabn<CR>
+nmap <s-Tab> :tabp<CR>
 function! s:build_go_files()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
