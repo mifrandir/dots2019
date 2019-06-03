@@ -1,0 +1,3 @@
+[submodule "vim/plug/YouCompleteMe"]
+	path = vim/plug/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
