@@ -3,7 +3,7 @@ dynamic_title = true
 allow_bold = true
 #bold_is_bright = true
 clickable_url = true
-font = Input Mono 14
+font = iosevka 14
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -50,7 +50,7 @@ color1 = rgb(255,92,87)
 color2 = rgb(90,247,142)
 color3 = rgb(243,249,157)
 color4 = rgb(87,199,255)
-color5 = rgb(255,106,193)
+color5 = #ffb056
 color6 = rgb(154,237,254)
 color7 = rgb(241,241,240)
 
@@ -60,8 +60,8 @@ color9 = rgb(255,92,87)
 color10 = rgb(90,247,142)
 color11 = rgb(243,249,157)
 color12 = rgb(87,199,255)
-color13 = rgb(255,106,193)
+color13 = #ffb056
 color14 = rgb(154,237,254)
-color7 = rgb(241,241,240)
+color15 = rgb(241,241,240)
 
 

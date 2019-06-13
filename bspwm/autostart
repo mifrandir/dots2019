@@ -3,6 +3,7 @@ compton &
 feh --bg-scale $HOME/.background.png
 $HOME/bin/polystart
 megasync &
-mailspring -b &
+thunderbird &
+slack -u &
 $HOME/clear_vim
 nm-applet &
