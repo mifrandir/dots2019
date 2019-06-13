@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plug')
 Plug 'connorholyday/vim-snazzy'
 let g:SnazzyTransparent = 1
-Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'snazzy' }
 Plug 'junegunn/fzf'
@@ -13,10 +12,8 @@ let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'yuttie/comfortable-motion.vim'
 let g:comfortable_motion_scroll_down_key = "j"
 let g:comfortable_motion_scroll_up_key = "k"
-Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'w0rp/ale'
 Plug 'honza/vim-snippets'
