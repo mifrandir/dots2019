@@ -34,3 +34,6 @@
 [submodule "vim/plug/vimtex"]
 	path = vim/plug/vimtex
 	url = https://github.com/lervag/vimtex
+[submodule "vim/plug/vim-easy-align"]
+	path = vim/plug/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align

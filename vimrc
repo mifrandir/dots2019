@@ -9,27 +9,28 @@ Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
-set conceallevel=1
+set conceallevel=2
 let g:tex_conceal='abdmg'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-let g:comfortable_motion_scroll_down_key = "j"
-let g:comfortable_motion_scroll_up_key = "k"
+let g:go_fmt_command = "goimports"
 Plug 'plasticboy/vim-markdown'
 Plug 'w0rp/ale'
 Plug 'honza/vim-snippets'
 Plug 'sirver/ultisnips'
 Plug 'Valloric/YouCompleteMe'
 Plug 'rstacruz/vim-closer'
+Plug 'vimwiki/vimwiki'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 let g:ale_completion_delay = 5000
 let g:airline#extesnions#ale#enabled = 1
 
 let g:UltiSnipsSnippetsDir="/home/miltfra/dots/vim/plug/vim-snippets/UltiSnips"
+let g:UltiSnipsEditSplit = "horizontal"
 "let g:UltiSnipsExpandTrigger = ''
-"let g:UltiSnipsJumpForwardTrigger = '<tab>'
-"let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-"let g:UltiSnipsEditSplit = "horizontal"
+"let g:UltiSnipsJumpForwardTrigger = ''
+"let g:UltiSnipsJumpBackwardTrigger = ''
 " Configurations:
 colorscheme snazzy
 set laststatus=2
@@ -51,10 +52,11 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-augroup markdown
-  au!
-  autocmd FileType markdown set tw=80
-augroup END
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+"augroup markdown
+"  au!
+"  autocmd FileType markdown set tw=80
+"augroup END
 
 " Tab Size:
 set shiftwidth=4
@@ -86,8 +88,8 @@ let g:go_list_type = "quickfix"
 
 " Keybindings:
 let mapleader = ","
-nmap <Tab> :tabn<CR>
-nmap <s-Tab> :tabp<CR>
+map <s-tab> :tabn<CR>
+nmap ~ :tabp<CR>
 function! s:build_go_files()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
@@ -102,3 +104,5 @@ autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 
 map <space> /
+
+nmap f :call fzf#run({'sink': 'tabe'})<CR>
