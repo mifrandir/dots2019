@@ -37,3 +37,6 @@
 [submodule "vim/plug/vim-easy-align"]
 	path = vim/plug/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
+[submodule "oh-my-zsh/custom/themes/spaceship-prompt"]
+	path = oh-my-zsh/custom/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt
