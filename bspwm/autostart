@@ -5,5 +5,7 @@ $HOME/bin/polystart
 megasync &
 thunderbird &
 slack -u &
+gtk-launch signal-tray &
 $HOME/clear_vim
 nm-applet &
+bidtray &

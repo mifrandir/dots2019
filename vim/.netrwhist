@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/data/projects/blockchat/src/main/java/me/miltz/blockchat'
 let g:netrw_dirhist_2='/cloud/documents/notes/index.md'
+let g:netrw_dirhist_3='/home/miltfra/go/src/github.com/miltfra/markov'
