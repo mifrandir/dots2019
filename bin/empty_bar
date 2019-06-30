@@ -1,2 +1,2 @@
 #!/bin/bash
-polybar -r empty
+polybar -r $(hostname)_empty
