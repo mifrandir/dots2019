@@ -39,7 +39,7 @@ scrollbar = off
 [colors]
 foreground = rgb(239, 240, 235)
 foreground_bold = rgb(239, 240, 235)
-background = rgba(40, 42, 56, 0.9)
+background = rgba(47, 52, 63, 0.8)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f

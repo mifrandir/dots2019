@@ -1,7 +1,10 @@
+#!/bin/bash
 $HOME/.screenlayout/default.sh
-compton &
-feh --bg-scale $HOME/.background.png
+#dunst &
+#compton &
+#feh --bg-scale $HOME/.background.png
 $HOME/bin/polystart
+#plank &
 megasync &
 thunderbird &
 slack -u &

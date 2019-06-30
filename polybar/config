@@ -9,15 +9,52 @@
 ;==========================================================
 
 [colors]
-background = #cc01010a
-background-focused = #cc0101a
-background-visible = #cc0101a
+background = #cc010101
+background-focused = #cc010101
+background-visible = #cc010101
 foreground = #ffffff
 foreground-alt = #888
 foreground-visible = #aaa
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
+
+[bar/empty]
+monitor = ${env:MONITOR:HDMI-A-0}
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+wm-restack = bspwm
+
+background = #00000000
+foreground = #00000000
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = ${colors.background}
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Hack:weight=bold:pixelsize=11;1
+font-1 = Font Awesome 5 Free:pixelsize=11;2
+font-2 = Font Awesome 5 Free:style=Solid:pixelsize=11;2
+font-3 = Font Awesome 5 Brands:pixelsize=11;2
+font-4 = Noto Sans:pixelsize=11;1
+
+modules-left = 
+modules-center = xwindow
+modules-right =
+
+tray-position = right
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
 
 [bar/xps]
 monitor = ${env:MONITOR:eDP1}
@@ -87,7 +124,7 @@ font-2 = Font Awesome 5 Free:style=Solid:pixelsize=11;2
 font-3 = Font Awesome 5 Brands:pixelsize=11;2
 font-4 = Noto Sans:pixelsize=11;1
 
-modules-left = time date xkeyboard updates spotify
+modules-left = time date xkeyboard updates spotify 
 modules-center = bspwm
 modules-right = usb root storage cpu memory eth
 
@@ -102,6 +139,11 @@ exec = /home/miltfra/.config/polybar/polybar-scripts/updates-arch-combined/updat
 interval = 600
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix = " "
+
+[module/xwindow]
+type = internal/xwindow
+label =  %title:0:50:...%
+label-underline = ${colors.foreground}
 
 [module/usb]
 type = custom/script
