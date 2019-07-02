@@ -6,12 +6,12 @@ sxhkd &
 
 HOSTNAME=`hostname`
 
-if [ $HOSTNAME == "desktop" ]; then
+if [ $(hostname) == "desktop" ]; then
     bspc monitor HDMI-A-1 -n L
     bspc monitor L -d 1 2 3 4
     bspc monitor HDMI-A-0 -n R
     bspc monitor R -d Q W E R
-elif [ $HOSTNAME == "xps" ]; then
+elif [ $(hostname) == "xps" ]; then
 	bspc monitor eDP1 -n P
 	bspc monitor P -d 1 2 3 4 Q W E R
 	bspc monitor HDMI-0 -n S
