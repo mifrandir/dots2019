@@ -1,5 +1,7 @@
 #! /bin/sh
 
+bspc rule -a lattedock layer=above
+
 sxhkd &
 
 HOSTNAME=`hostname`
