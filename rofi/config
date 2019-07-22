@@ -5,10 +5,10 @@ rofi.lines:                          8
 rofi.columns:                        1
 rofi.font:                           Input Mono 14
 ! State:                             'bg',     'fg',        'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal:                   #cc2f343f, #ffffff,    #cc2f343f, #ffffff, #cc2f343f
-rofi.color-urgent:                   #ff5c57, #000000,    #ff5c57, #ffffff,  #cc2f343f
-rofi.color-active:                   #9aedee, #000000,    #9aedee, #ffffff,  #cc2f343f
-rofi.color-window:                   #cc2f343f, #88000000,  #ffffff
+rofi.color-normal:                   #cc32343d, #ffffff,    #cc32343d, #ffffff, #cc32343d
+rofi.color-urgent:                   #ff5c57, #000000,    #ff5c57, #ffffff,  #cc32343d
+rofi.color-active:                   #9aedee, #000000,    #9aedee, #ffffff,  #cc32343d
+rofi.color-window:                   #cc32343d, #cc32343d,  #ffffff
 rofi.bw:                             0
 rofi.location:                       0
 rofi.padding:                        20

@@ -7,8 +7,12 @@ super + Return
 	termite
 
 # program launcher
-#super + m
-#	rofi -show drun -m -1 -show-icons
+super + m
+	rofi -show drun -m -1 -show-icons
+
+# window sticher
+alt + Tab
+	rofi -show window -m -1 -show-icons
 
 # make sxhkd reload its configuration files:
 alt + Escape
