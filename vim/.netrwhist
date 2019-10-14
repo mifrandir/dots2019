@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/data/projects/blockchat/src/main/java/me/miltz/blockchat'
-let g:netrw_dirhist_2='/cloud/documents/notes/index.md'
-let g:netrw_dirhist_3='/home/miltfra/go/src/github.com/miltfra/markov'
-let g:netrw_dirhist_4='/home/miltfra/dots/oh-my-zsh/custom/themes/spaceship-prompt'
-let g:netrw_dirhist_5='/home/miltfra/dots/oh-my-zsh/custom/themes/spaceship-prompt/modules'
-let g:netrw_dirhist_6='/home/miltfra/dots/oh-my-zsh/custom/themes/spaceship-prompt/modules/shunit2'

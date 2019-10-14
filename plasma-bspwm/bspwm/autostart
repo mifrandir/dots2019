@@ -1,0 +1,6 @@
+#!/bin/bash
+$HOME/.screenlayout/default.sh
+#dunst &
+xcompmgr &
+feh --bg-scale /home/miltfra/.background.png
+nm-applet &

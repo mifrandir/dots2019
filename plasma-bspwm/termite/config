@@ -1,0 +1,68 @@
+[options]
+dynamic_title = true
+allow_bold = true
+#bold_is_bright = true
+clickable_url = true
+font = iosevka 14
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = firefox
+# "system", "on" or "off"
+cursor_blink = off
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+scrollbar = off
+
+[colors]
+foreground = rgb(239, 240, 235)
+foreground_bold = rgb(239, 240, 235)
+#background = rgba(37, 42, 45, 0.8)
+background = rgba(11,16,22,0.9)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# Colors from original hyper-snazzy theme
+color0 = #0b1016
+color1 = #B15452
+color2 = #39485F
+color3 = #39485F
+color4 = #3D6089
+color5 = #5B535E
+color6 = #567094
+color7 = #a4bcd4
+
+# Other default termite colors
+color8 = #1b2837
+color9 = #f65d59
+color10 = #405b85
+color11 = #ffb17c
+color12 = #427bbe
+color13 = #7b6085
+color14 = #608fcf
+color15 = #d8f7ff
+
+

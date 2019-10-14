@@ -1,0 +1,7 @@
+#!/bin/bash
+
+bspc desktop any.!occupied -r
+n=$(($(cat /home/miltfra/desktops)+1))
+bspc monitor -a $n
+bspc desktop -f $n
+echo $n > /home/miltfra/desktops

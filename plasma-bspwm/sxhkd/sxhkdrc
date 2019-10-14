@@ -18,10 +18,10 @@ alt + Tab
 alt + Escape
 	pkill -USR1 -x sxhkd
 
-super + shift  + {y, u, i, o}
-	{reboot, shutdown now, bspc quit, /home/miltfra/bin/lock}
+#super + shift  + {y, u, i, o}
+#	{reboot, shutdown now, bspc quit, /home/miltfra/bin/lock}
 
-super + {_, shift+} space
+super + {_, shift} + u
 	setxkbmap -layout {us, de}
 
 #
@@ -75,17 +75,34 @@ super +{_, shift+} grave
 
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+#super + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1,2,3,4,q,w,e,r}
-	bspc {desktop -f,node -d} '^{1-8}'
+super + {_,shift + }{1-4}
+	bspc {desktop -f,node -d} L:^{1-4}
 
-super + {_, shfit +}{5,6}
-	bspc {desktop -f, node -d} '^{9, 10}'
+super + {_,shift + }{q,w,e,r}
+	bspc {desktop -f,node -d} R:^{1-4}
+
+super + space
+	bspc desktop -s next:focused
+
+alt + {1-4}
+	bspc desktop -s L:^{1-4}
+
+alt + {q,w,e,r}
+	bspc desktop -s R:^{1-4}
+
+alt + shift + {1-4}
+	bspc desktop -s L:^{1-4};\
+	bspc desktop -f L:^{1-4}
+
+alt + shift + {q,w,e,r}
+	bspc desktop -s R:^{1-4};\
+	bspc desktop -f R:^{1-4}
 #
 # move/resize
 #
@@ -113,3 +130,6 @@ super + s
     else \
         bspc node -w last.manual.local; \
 	fi
+
+#super + {y, u, i, o, p}
+#	{firefox, dolphin, code, thunderbird, okular}
